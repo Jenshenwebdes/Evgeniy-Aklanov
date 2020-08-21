@@ -19,20 +19,21 @@ body {
   padding-bottom: 92px;
 }
 
-.section-tittle {
+.section-title {
   margin: 0;
-  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   margin-bottom: 84px;
 }
 
-.hero-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 105px;
+
+.social-link {
+  margin-left: 20px;
+}
+
+.social-link:first-child {
+  margin-left: 0;
 }
 
 .hero {
@@ -41,12 +42,11 @@ body {
   background: linear-gradient(0.01deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%);
 }
 
-.social-link {
-  margin-left: 20px;
-}
-
-.social-link:first-child {
-  margin-left: 0;
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 105px;
 }
 
 .hero-content {
@@ -97,6 +97,11 @@ body {
   width: 100%;
 }
 
+.hero-button {
+  width: 285px;
+  height: 65.17px;
+}
+
 .hero-avatar {
   width: 389px;
   height: 389px;
@@ -131,7 +136,6 @@ body {
 }
 
 .features-title {
-  font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
@@ -140,11 +144,92 @@ body {
 }
 
 .features-text {
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
   margin: 0;
+}
+
+/* Projects */
+
+.projects {
+  margin: 0;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
+}
+
+.projects-slide {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.project-title {
+  flex-basis: 100%;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+.project-subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.project-paragraph {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+}
+
+.project-text {
+  flex-basis: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-time,
+.project-cost {
+  flex-basis: 50%;
+  margin-bottom: 44px;
+}
+
+.project-time,
+.project-cost,
+.project-feedback {
+  display: flex;
+  align-items: flex-start;
+}
+
+.project-icon {
+  margin-right: 16px;
+}
+
+.projects-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 44px;
+}
+
+.projects-bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #FFBB01;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.projects-bullet-active {
+  background-color: #FFBB01;
 }
 
 /*Contacts*/
@@ -209,6 +294,7 @@ body {
 .contacts-text {
   flex-basis: 50%;
 }
+
 .contacts-data {
   display: flex;
   flex-wrap: wrap;
